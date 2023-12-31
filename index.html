@@ -6,12 +6,25 @@
     <title>Tailwind</title>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryText: '#A4BC46',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="bg-amber-100">
         <!-- nav -->
-
+        <nav>
+            <h3 class="text-2xl font-bold"><span class="text-primaryText">Penguin</span> Fashion</h3>
+        </nav>
         <!-- banner  -->
     </header>
     <!-- main --> 

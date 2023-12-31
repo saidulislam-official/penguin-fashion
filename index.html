@@ -12,6 +12,7 @@
             extend: {
               colors: {
                 primaryText: '#A4BC46',
+                bannerTextColor : '#FABE4C',
               }
             }
           }
@@ -22,16 +23,45 @@
     <!-- header -->
     <header class="bg-amber-100">
         <!-- nav -->
-        <nav>
-            <h3 class="text-2xl font-bold"><span class="text-primaryText">Penguin</span> Fashion</h3>
+        <!-- <nav class="flex items-center justify-around pt-10"> -->
+        <nav class="flex container mx-auto items-center justify-between pt-10">
+            <img class="w-1/5 h-20" src="icons/logo.png" alt="">
+            <!-- <h3 class="text-2xl font-bold"><span class="text-primaryText">Penguin</span> Fashion</h3> -->
+            <ul class="flex gap-14 font-medium text-base	">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </nav>
         <!-- banner  -->
+        <div class="pt-4 flex container mx-auto pb-14">
+            <div class=" w-3/4 flex flex-col justify-center">
+                <h1 class="font-normal text-7xl uppercase"><span class="text-bannerTextColor">Be the Penguins</span> of Winter</h1>
+                <p class="pt-1 text-base	font-normal">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="mt-2">
+                    <button class="bg-primaryText text-white px-8 py-4  font-medium uppercase text-base	rounded-lg">
+                        <a href="#" class="flex gap-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path  fill="white" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            Shop Now
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <img  src="images/model.png" alt="">
+            </div>
+        </div>
     </header>
     <!-- main --> 
-    <section>
-        <div>
-            <h3 class="text-base font-bold border-8 border-yellow-100">The Quick Brown Fox Jumps Over A Lazy Dog.</h3>
-        </div>
-    </section>
+    <main class=" container mx-auto">
+        <!-- women jacket section -->
+        <section class="mt-12">
+            <h2 class="uppercase text-5xl">women jacket</h2>
+        </section>
+    </main>
+    
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Tailwind</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryText: '#A4BC46',
+                bannerTextColor : '#FABE4C',
+                secondaryText: '#363958',
+                priceText: '#FABE4C',
+                white: '#f8fafc',
+                jacketBg:'#F1F1F1',
+                mainBg:'#FFF',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- nav -->
+        <!-- banner -->
+        <div>
+            <div>
+                <h1 class="text-7xl font-semibold uppercase">
+                    <span class="text-amber-400">Be the Penguins</span>
+                    <br>
+                    of Winter
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fugit.</p>
+                <button class="uppercase bg-gradient-to-r from-cyan-500 to-blue-500">
+                    shop Now
+                </button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
